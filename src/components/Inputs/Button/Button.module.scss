@@ -1,0 +1,46 @@
+.main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  border-color: transparent;
+
+  height: var(--button-height);
+
+  background: var(--color-primary);
+  border-width: var(--button-border-width);
+  border-style: var(--button-border-style);
+  gap: var(--space-xs);
+  font-size: var(--font-size);
+  font-weight: var(--button-font-weight);
+  padding: var(--button-space);
+  color: var(--color-primary-text);
+
+  &.disabled {
+    filter: grayscale(90%) invert(10);
+  }
+
+  @mixin active {
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-text);
+  }
+
+  @media (hover: hover) {
+    &:not(:disabled):not(.disabled):hover {
+      background-color: var(--color-primary-light);
+      color: var(--color-primary-text);
+    }
+
+    &:not(:disabled):not(.disabled):active {
+      @include active;
+    }
+  }
+
+  @media (hover: none) {
+    &:not(:disabled):not(.disabled):active {
+      @include active;
+    }
+  }
+}

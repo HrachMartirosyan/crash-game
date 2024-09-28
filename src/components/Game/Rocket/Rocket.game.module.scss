@@ -1,0 +1,37 @@
+.main {
+  background-image: url("../../../assets/images/rocket.png");
+  width: 84px;
+  height: 125px;
+
+  &.flying {
+    animation-name: flying;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+  }
+
+  &.boom {
+    animation-name: boom;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes flying {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -168px;
+  }
+}
+
+@keyframes boom {
+  from {
+    background-position: -168px;
+  }
+  to {
+    background-position: -336px;
+  }
+}

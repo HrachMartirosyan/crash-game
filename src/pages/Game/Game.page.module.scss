@@ -1,0 +1,31 @@
+.main {
+}
+
+.loading {
+  color: var(--color-primary);
+  width: 60px;
+  height: 60px;
+}
+
+.gameBox {
+  width: 90%;
+  max-width: 600px;
+  flex-direction: column;
+}
+
+.gameWrapper {
+  width: 100%;
+  height: 400px;
+  background: var(--color-game-background);
+  border: var(--border-width) var(--border-type) var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.actionsWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

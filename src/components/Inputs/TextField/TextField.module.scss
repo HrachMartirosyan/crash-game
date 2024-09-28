@@ -1,0 +1,38 @@
+.main {
+  margin: 0;
+  color: var(--color-primary-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all var(--motion-duration-mid);
+  padding: 0 var(--space-xs);
+  gap: var(--space-xs);
+  z-index: 2;
+  border: var(--border-width) var(--border-type) var(--color-primary);
+  position: relative;
+
+  &.disabled {
+    filter: grayscale(90%) invert(10);
+  }
+
+  &.withError {
+    border-color: var(--color-error);
+  }
+
+  input {
+    height: var(--input-height);
+    border-radius: var(--border-radius);
+    color: var(--color-primary);
+
+    &::placeholder {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.errorText {
+  color: var(--color-error);
+  position:absolute;
+  margin-top: var(--space-xs);
+}

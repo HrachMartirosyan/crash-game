@@ -1,0 +1,111 @@
+body {
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  background: none;
+  vertical-align: top;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  &,
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: var(--color-background);
+}
+
+.wHeight {
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --color-background: #150d25;
+  --color-game-background: #0e0917;
+
+  --color-primary-light: rgba(255, 222, 90);
+  --color-primary: rgb(255, 222, 9);
+  --color-primary-dark: rgb(255, 189, 20);
+  --color-error: red;
+
+  --color-text-heading: #ffffff;
+  --color-text-primary: #ffffff;
+
+  // FONT
+  --font-family: Roboto, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-size-text: 16px;
+  --font-size-heading-1: 38px;
+  --font-size-heading-2: 30px;
+  --font-size-heading-3: 24px;
+  --font-size-heading-4: 20px;
+  --font-size-heading-5: 16px;
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space: 16px;
+  --space-md: 20px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  // LINE HEIGHT
+  --line-height-heading-1: 1.21;
+  --line-height-heading-2: 1.26;
+  --line-height-heading-3: 1.33;
+  --line-height-heading-4: 1.4;
+  --line-height-heading-5: 1.5;
+
+  // BORDER
+  --border-width: 2px;
+  --border-type: solid;
+
+  --border-radius: 6px;
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-outer: 4px;
+
+  --button-height: 40px;
+
+  // BUTTON FONT
+  --button-font-weight: 400;
+
+  // BUTTON BORDER
+  --button-border-width: 2px;
+  --button-border-style: solid;
+  --button-group-border-width-between: 2px;
+
+  // BUTTON PADDING
+  --button-space-sm: 7px;
+  --button-space: 14px;
+  --button-space-lg: 14px;
+
+  // BUTTON ICON SIZE
+  --button-icon-size-sm: 14px;
+  --button-icon-size: 16px;
+  --button-icon-size-lg: 18px;
+
+  --input-height: 36px;
+}
